@@ -23,14 +23,16 @@
   to { transform: rotate(360deg); }
 }
 
+.sectionTitle {
+  display: block;
+  cursor: pointer;
+}
+
 .sectionContent {
-  overflow: hidden
-}
-
-.container {
-
-}
-
-.section {
-
+  overflow: hidden;
+  -webkit-transition: height 0.3s ease-in;
+  -moz-transition: height 0.3s ease-in;
+  -o-transition: height 0.3s ease-in;
+  -ms-transition: height 0.3s ease-in;
+  transition: height 0.3s ease-in;
 }
