@@ -11,10 +11,6 @@ export default class Container extends Component {
         this.toggleOne = this.toggleOne.bind(this);
     }
 
-    getInitialState(sectionList) {
-        return { openSectionIndex: -1 }
-    }
-
     buildSections(sectionList) {
         var sections = sectionList.map(this.buildSection)
         return sections;
