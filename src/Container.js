@@ -5,7 +5,7 @@ export default class Container extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            openSectionIndex: 2
+            openSectionIndex: -1
         }
         this.buildSection = this.buildSection.bind(this);
         this.toggleOne = this.toggleOne.bind(this);
