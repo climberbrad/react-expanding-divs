@@ -27,7 +27,7 @@ export default class Container extends Component {
     buildSection(section, index) {
         var openStatus = (index === this.state.openSectionIndex);
         /* Remember to add a 'key'. React wants you to add an identifier when you instantiate a component multiple times */
-        return <Section id={index} data={section} toggleOne={this.toggleOne} open={openStatus} />
+        return <Section key={index} id={index} data={section} toggleOne={this.toggleOne} open={openStatus} />
     }
 
     render() {

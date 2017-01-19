@@ -24,7 +24,7 @@ export default class Section extends Component {
     render() {
         var style = { height: this.getHeight() }
         return (
-            <div className={"section section" + this.props.key}>
+            <div className={"section section" + this.props.id}>
                 <h2 className="sectionTitle" onClick={this.toggleContent} >{this.props.data.title}</h2>
                 <p className="sectionContent" style={style} >{this.props.data.content}</p>
             </div>
